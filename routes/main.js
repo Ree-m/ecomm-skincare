@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const authController = require("../controllers/auth");
 const mainController = require("../controllers/main");
-// const { ensureAuth, ensureGuest } = require("../middleware/auth");
+const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
 //Main Routes - simplified for now
 router.get("/", mainController.getIndex);
