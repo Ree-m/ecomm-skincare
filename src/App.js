@@ -1,9 +1,16 @@
 // import { callActionApi } from 'admin-bro';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+// Navbar 
 import Navbar from './Navbar';
 import Home from './Home';
+import Shop from './Shop';
 import OurStory from './OurStory';
+import Search from './Search';
+import Cart from './Cart';
+// import Sidebar from './Sidebar';
+
+
 
 function App() {
 
@@ -34,17 +41,33 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="App" id="outer-container">
         <Navbar />
-        <div className="content">
+
+        <div className="content" id="page-wrap">
 
           <Routes>
             <Route path="/" element={<Home />} />
+          </Routes>
+
+          <Routes>
+            <Route path="/Shop" element={<Shop />} />
           </Routes>
           
           <Routes>
             <Route path="/OurStory" element={<OurStory />} />
           </Routes>
+
+          <Routes>
+            <Route path="/Search" element={<Search />} />
+          </Routes>
+
+          <Routes>
+            <Route path="/Cart" element={<Cart/>} />
+          </Routes>
+
+
+
 
         </div>
 
