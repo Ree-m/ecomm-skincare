@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    --grey:#333333;
+    --accent:#DD8560;
+    
+}
+
+#page-wrap {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

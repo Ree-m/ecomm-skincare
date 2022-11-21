@@ -4,11 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // Navbar 
 import Navbar from './Navbar';
 import Home from './Home';
-import Shop from './Shop';
-import OurStory from './OurStory';
 import Search from './Search';
 import Cart from './Cart';
-// import Sidebar from './Sidebar';
+import Sidebar from './Sidebar';
+
 
 
 
@@ -42,7 +41,11 @@ function App() {
   return (
     <Router>
       <div className="App" id="outer-container">
+        
         <Navbar />
+        {/* <UncontrolledExample /> */}
+        
+        
 
         <div className="content" id="page-wrap">
 
@@ -51,20 +54,28 @@ function App() {
           </Routes>
 
           <Routes>
-            <Route path="/Shop" element={<Shop />} />
+            <Route path="/Search" element={<Search />} />
           </Routes>
-          
-          <Routes>
-            <Route path="/OurStory" element={<OurStory />} />
+
+          {/* <Routes>
+            <Route path="/Sign In" element={<SignIn />} />
           </Routes>
 
           <Routes>
-            <Route path="/Search" element={<Search />} />
-          </Routes>
+            <Route path="/SignUp" element={<Signup />} />
+          </Routes> */}
 
           <Routes>
             <Route path="/Cart" element={<Cart/>} />
           </Routes>
+
+           
+
+
+
+
+
+        
 
 
 

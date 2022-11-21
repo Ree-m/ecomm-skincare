@@ -1,0 +1,43 @@
+
+.nav1{
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.nav2{
+    gap:100px;
+    justify-content: start;
+    padding: 20px 80px;
+    font-size: 25px;
+}
+.nav2-links,.icon-name{
+    text-decoration: none;
+    color: var(--grey);
+}
+.icons{
+    gap: 14px;
+   
+}
+
+.logo{
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 50px;
+    align-items: flex-end;
+    
+}
+
+.icon{
+    color:var(--grey);
+    font-size: 35px;
+
+}
+
+.icons-name{
+    gap:15px;
+    font-size: smaller;
+    justify-content: end;
+    
+}
+

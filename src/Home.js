@@ -1,7 +1,9 @@
+import Carousel from "./Carousel";
 const Home = () => {
     return ( 
         <div className="home">
-            <h1>This is home</h1>
+          <Carousel />
+
         </div>
     )
 }
