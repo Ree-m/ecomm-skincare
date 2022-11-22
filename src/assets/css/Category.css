@@ -1,0 +1,22 @@
+
+.category{
+    padding:50px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+h1{
+    text-transform: uppercase;
+}
+
+.images{
+    width: 50%;
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+span{
+    color:var(--accent);
+}
