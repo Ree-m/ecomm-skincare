@@ -1,6 +1,6 @@
 .categoryImageIcon{
     background-color: var(--accent-grey);
-    border-radius: 50%;
+    border-radius: 50%; 
     width:100px;
     height: 100px;
 
@@ -11,26 +11,11 @@
     text-transform: uppercase;
     
 }
-/* .categoryImageIcon:hover{
-    background-color: var(--accent);
 
-}
-.categoryImageText:hover{
-    color:var(--accent);
-} */
-
-/* .categoryImageIcon:hover ~ p, .categoryImageIcon:hover  {
-     background-color: var(--accent); 
-     color:var(--accent);
-    } */
-
-img{
+.categoryImageIcon img{
 
     width: 50px;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
     
 }

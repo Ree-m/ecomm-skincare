@@ -5,6 +5,7 @@ import makeupIcon from './assets/images/makeup-icon.png';
 import bodyIcon from './assets/images/body&hair.png';
 import sheetMaskIcon from './assets/images/sheet-masks-icon.png';
 import faceToolsIccon from './assets/images/face-tools.png';
+import Product from './Product';
 
 const Category = () => {
     return ( 
@@ -20,6 +21,7 @@ const Category = () => {
                 <CategoryImage text={"Hair & Body"} src={bodyIcon} />
                 <CategoryImage text={"Sheet Masks"} src={sheetMaskIcon} />
                 <CategoryImage text={"Devices & Tools"} src={faceToolsIccon} />
+
 
 
             </div>

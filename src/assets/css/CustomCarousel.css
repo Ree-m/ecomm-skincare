@@ -1,0 +1,29 @@
+
+
+.customCarouselTitle{
+    text-align:center;
+    text-transform: uppercase;
+    padding: 5px;
+    
+
+}
+
+.item{
+    
+    /* height: 150px; */
+    /* width: 150px; */
+    text-align:center;
+    /* align-items: center; */
+    
+    margin: 4px;
+    
+    overflow: hidden;
+}
+
+.item:hover img{
+    cursor: pointer;
+}
+ 
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active{
+    background-color: var(--accent) !important;
+} 

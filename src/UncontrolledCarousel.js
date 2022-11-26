@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import black from './assets/black.jpeg'
 
-function UncontrolledExample() {
+function UncontrolledCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
@@ -33,4 +33,4 @@ function UncontrolledExample() {
   );
 }
 
-export default UncontrolledExample;
+export default UncontrolledCarousel;

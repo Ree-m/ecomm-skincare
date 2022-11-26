@@ -1,7 +1,0 @@
-const COLORS = {
-
-  grey: '#333333',
-  accent: '#E55143',
-  accentGrey:'#F1F1F1',
-
-};

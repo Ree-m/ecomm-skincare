@@ -6,9 +6,6 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Search from './Search';
 import Cart from './Cart';
-import Sidebar from './Sidebar';
-import Category from './Category';
-// import { BiCategory } from 'react-icons/bi';
 
 
 function App() {
@@ -43,7 +40,6 @@ function App() {
       <div className="App" id="outer-container">
         
         <Navbar />
-        {/* <UncontrolledExample /> */}
         
         
 
@@ -67,9 +63,9 @@ function App() {
 
           <Routes>
             <Route path="/Cart" element={<Cart/>} />
-          </Routes>
+          </Routes> 
 
-          <Category />
+
 
            
 

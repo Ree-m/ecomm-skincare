@@ -6,7 +6,7 @@ const CategoryImage = ({ text, src }) => {
 
     const [isHovering,setIsHovering]=useState(false);
 
-    const handleMouseEnter=()=>{
+    const handleMouseEnter=()=>{ 
         setIsHovering(true);
     }
     const handleMosueLeave=()=>{
