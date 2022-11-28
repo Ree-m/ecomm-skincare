@@ -5,7 +5,7 @@ import './assets/css/CustomCarousel.css'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import black from './assets/black.jpeg';
-import pink from './assets/images/pink.png';
+import pink from "./assets/images/cosrx-snailmucin.jpg"
 import Product from './Product.js';
 
 
@@ -23,7 +23,7 @@ function CustomCarousel() {
   const items = [
     <div className="item">
 
-      <Product imgSrc={pink} imgAlt={"Cosrx toner"} brandName={"Cosrx"} productName={"Cosrx toner"} price={'USD 15'} />
+      <Product imgSrc={pink} imgAlt={"Cosrx toner"} brandName={"Cosrx"} productName={"Cosrx toner"} price={''} />
 
     </div>,
     <div className="item">

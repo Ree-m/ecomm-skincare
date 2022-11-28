@@ -17,5 +17,11 @@
   }
 .grid{
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-row: repeat(4,1fr);
+}
+
+.productImage{
+  border: 1px solid grey;
+    border-right: 1px solid grey ;
+    height: 230px;
 }

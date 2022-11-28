@@ -1,2 +1,10 @@
+.newArrivalsTitle h1{
+    text-align: center;
+}
 
+.newArrivalsItems {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
 

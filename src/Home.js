@@ -5,6 +5,8 @@ import CustomCarousel from "./CustomCarousel.js";
 import Product from './Product';
 import pink from './assets/images/pink.png';
 import NewArrivals from './NewArrivals';
+import Footer from './Footer.js';
+
 const Home = () => {
     return ( 
         <div className="home">
@@ -13,6 +15,7 @@ const Home = () => {
           <Category />
           <CustomCarousel />
           <NewArrivals />
+          <Footer />
 
 
 

@@ -1,28 +1,42 @@
 import { useState } from 'react';
-import AddTo from './AddTo.js';
-import "./assets/css/Product.css"
+import "./assets/css/Product.css";
+import { FiHeart } from "react-icons/fi";
+import { HiOutlineShoppingBag } from "react-icons/hi";
 
-const Product = ({imgSrc,imgAlt,brandName,productName,price}) => {
-    const [isHovering,setIsHovering]=useState(false);
+const Product = ({ imgSrc, imgAlt, brandName, productName, price }) => {
+    const [isHovering, setIsHovering] = useState(false);
 
-    const handleMouseEnter=()=>{
+    const handleMouseEnter = () => {
         setIsHovering(true);
     }
 
-    const handleMouseLeave=()=>{
+    const handleMouseLeave = () => {
         setIsHovering(false);
     }
 
     return (
         <div className="product">
-            <img src={imgSrc} alt={imgAlt} />
+            <div 
+            style={{
+                opacity:isHovering?0.5:1,
+                
+            }}
+            
+            
+            
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            
+            >
+                <img src={imgSrc} alt={imgAlt} />
+            </div>
             <h1>{brandName}</h1>
             <p>{productName}</p>
             <span>{price}</span>
-        </div> 
+        </div>
 
 
     );
 }
- 
+
 export default Product;

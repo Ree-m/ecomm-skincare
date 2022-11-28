@@ -1,0 +1,20 @@
+.footer{
+    margin-top: 50px;
+}
+
+.footerNav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+.footerNavItem{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:var(--grey)
+}
+.footerDetails{
+    background-color: black;
+    color: white;
+}

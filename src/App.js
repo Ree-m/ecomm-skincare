@@ -6,6 +6,11 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Search from './Search';
 import Cart from './Cart';
+import SignIn from './SignIn.js';
+import SignUp from './SignUp.js';;
+
+
+// import Footer from './Footer.js';
 
 
 function App() {
@@ -53,32 +58,21 @@ function App() {
             <Route path="/Search" element={<Search />} />
           </Routes>
 
-          {/* <Routes>
+           <Routes>
             <Route path="/Sign In" element={<SignIn />} />
           </Routes>
 
           <Routes>
-            <Route path="/SignUp" element={<Signup />} />
-          </Routes> */}
+            <Route path="/SignUp" element={<SignUp />} />
+          </Routes> 
 
           <Routes>
             <Route path="/Cart" element={<Cart/>} />
           </Routes> 
 
 
-
-           
-
-
-
-
-
-        
-
-
-
-
         </div>
+        {/* <Footer /> */}
 
 
       </div>
