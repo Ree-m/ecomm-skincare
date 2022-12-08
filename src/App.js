@@ -16,27 +16,27 @@ import SignUp from './SignUp.js';;
 function App() {
 
   //  This is to connect our front end to the express server.
-  // useEffect(() => {
-  //   getData()
-  // }, [])
+  useEffect(() => {
+    getData()
+  }, [])
 
-  // async function getData() {
-  //   await fetch('http://localhost:9000/main', {
-  //     mode: 'cors'
-  //   })
-  //     .then(res => {
-  //       return res.text()
-  //     })
-  //     .then(data => {
+  async function getData() {
+    await fetch('http://localhost:9000/main', {
+      mode: 'cors'
+    })
+      .then(res => {
+        return res.text()
+      })
+      .then(data => {
 
-  //       console.log(data)
-  //     })
-  //     .catch(err => {
+        console.log(data,"kjhgfdsa")
+      })
+      .catch(err => {
 
-  //       console.log(err)
-  //     })
+        console.log(err)
+      })
 
-  // }
+  }
 
 
 

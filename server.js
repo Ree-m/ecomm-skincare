@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const router = express.Router();
 const mongoose = require("mongoose");
-require('express-async-errors')
+require("express-async-errors")
 const passport = require("passport");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
@@ -14,14 +14,13 @@ const connectDB = require("./config/database.js");
 var cors = require("cors");
 
 
-const mainRoutes = require('./routes/main');
-const adminRoutes = require('./routes/admin');
+const mainRouter = require('./routes/main');
+const adminRouter= require('./routes/admin');
+const userRouter= require('./routes/user');
+const itemRouter= require('./routes/item');
+const cartRouter= require('./routes/cart');
 
-const cleansersRoutes = require('./routes/cleansers');
-const tonersRoutes = require('./routes/toners');
-const serumsRoutes= require('./routes/serums');
-const moisturizersRoutes = require('./routes/moisturizers');
-const sunscreensRoutes = require('./routes/sunscreens');
+
 
 
 
@@ -31,7 +30,7 @@ require("dotenv").config({ path: "./config/.env" });
 
 
 // Passport config
-require("./config/passport")(passport);
+require("./config/passport");
 
 //Connect To Database
 connectDB();
@@ -76,14 +75,13 @@ app.use(flash());
 //Setup Routes For Which The Server Is Listening
 
 
-app.use("/main",mainRoutes);
-app.use("/admin",adminRoutes);
-app.use("/cleansers",cleansersRoutes);
-app.use("/toners",tonersRoutes);
-app.use("/serums",serumsRoutes);
-app.use("/moisturizers",moisturizersRoutes);
-app.use("/sunscreens",sunscreensRoutes);
-app.use("/reviews",reviewsRoutes);
+app.use("/main",mainRouter);
+app.use("/admin",adminRouter);
+app.use("/admin",userRouter);
+app.use("/admin",cartRouter);
+app.use("/admin",itemRouter);
+
+
 
 
 
@@ -107,5 +105,3 @@ app.listen(process.env.PORT, () => {
 
 
 
-// ,
-  //   "proxy": "http://localhost:8000/"
