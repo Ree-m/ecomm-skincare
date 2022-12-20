@@ -5,6 +5,8 @@ module.exports = {
       res.send(
         "hello,api is working "
       );
+
+      console.log("main controller on!!!")
       
     }
   };

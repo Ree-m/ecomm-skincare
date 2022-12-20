@@ -14,11 +14,11 @@ const connectDB = require("./config/database.js");
 var cors = require("cors");
 
 
-const mainRouter = require('./routes/main');
-const adminRouter= require('./routes/admin');
-const userRouter= require('./routes/user');
-const itemRouter= require('./routes/item');
-const cartRouter= require('./routes/cart');
+const mainRouter = require('./routers/main');
+const adminRouter= require('./routers/admin');
+const userRouter= require('./routers/user');
+const itemRouter= require('./routers/item');
+const cartRouter= require('./routers/cart');
 
 
 
@@ -77,9 +77,9 @@ app.use(flash());
 
 app.use("/main",mainRouter);
 app.use("/admin",adminRouter);
-app.use("/admin",userRouter);
-app.use("/admin",cartRouter);
-app.use("/admin",itemRouter);
+app.use("/user",userRouter);
+app.use("/cart",cartRouter);
+app.use("/item",itemRouter);
 
 
 

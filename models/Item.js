@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
+const ObjectID = mongoose.Schema.Types.ObjectId
+
 
 const itemSchema = new mongoose.Schema({
-    
+   
     name: {
        type: String,
        required: true,
@@ -22,4 +24,7 @@ const itemSchema = new mongoose.Schema({
     }, {
     timestamps: true
     })
+
+    module.exports = mongoose.model("Item", itemSchema);
+
     
