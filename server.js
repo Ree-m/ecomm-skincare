@@ -16,9 +16,8 @@ var cors = require("cors");
 
 const mainRouter = require('./routers/main');
 const adminRouter= require('./routers/admin');
-const userRouter= require('./routers/user');
 const itemRouter= require('./routers/item');
-const cartRouter= require('./routers/cart');
+// const cartRouter= require('./routers/cart');
 
 
 
@@ -34,8 +33,6 @@ require("./config/passport");
 
 //Connect To Database
 connectDB();
-
-
 
 //Using EJS for views
 // app.set("view engine", "ejs");
@@ -77,9 +74,8 @@ app.use(flash());
 
 app.use("/main",mainRouter);
 app.use("/admin",adminRouter);
-app.use("/user",userRouter);
-app.use("/cart",cartRouter);
-app.use("/item",itemRouter);
+// app.use("/cart",cartRouter);
+app.use("/items",itemRouter);
 
 
 

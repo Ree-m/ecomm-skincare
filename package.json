@@ -58,7 +58,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev":"env-cmd -f config/.env nodemon src/server.js"
+    "dev":"nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
